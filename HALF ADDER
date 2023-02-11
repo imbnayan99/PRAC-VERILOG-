@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Er. Nayan Barua
+// 
+// Create Date: 11.02.2023 11:14:21
+// Design Name: 
+// Module Name: halfadder
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module halfadder(a,b,Sum,Carry);
+
+input a,b;
+output Sum,Carry;
+
+assign Carry=a&b;
+assign Sum=a^b;
+
+endmodule
